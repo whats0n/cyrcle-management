@@ -368,12 +368,15 @@
                 </ul>
                 <div class="form history__form">
                   <div class="form__col form__col_date">
-                    <input type="text" class="input"> </div>
+                    <input type="text" class="input" placeholder="Date"> </div>
                   <div class="form__col form__col_number">
-                    <input type="text" class="input"> </div>
+                    <input type="text" class="input" placeholder="lbs"> </div>
                   <div class="form__col form__col_select">
                     <div class="select">
-                      <select>
+                      <svg class="icon icon-angle-down select__arrow">
+                        <use xlink:href="img/sprite.svg#icon-angle-down"></use>
+                      </svg>
+                      <select class="select__field">
                         <option value="Success">Success</option>
                         <option value="Missed">Missed</option>
                       </select>
@@ -381,6 +384,73 @@
                   </div>
                   <div class="form__control"> </div>
                 </div>
+                <ul class="history__list">
+                  <li class="history__item is-error">
+                    <div class="history__icon">
+                      <svg class="icon icon-close history__close">
+                        <use xlink:href="img/sprite.svg#icon-close"></use>
+                      </svg>
+                    </div>
+                    <div class="history__col history__date">05/21/2018</div>
+                    <div class="history__col history__number">06 lbs</div>
+                    <div class="history__col history__status">MISSED</div>
+                    <div class="history__col history__control">
+                      <a href="#" class="history__edit">Edit</a>
+                    </div>
+                  </li>
+                  <li class="history__item ">
+                    <div class="history__icon">
+                      <svg class="icon icon-checked history__checked">
+                        <use xlink:href="img/sprite.svg#icon-checked"></use>
+                      </svg>
+                    </div>
+                    <div class="history__col history__date">05/21/2018</div>
+                    <div class="history__col history__number">06 lbs</div>
+                    <div class="history__col history__status">SUCCESS</div>
+                    <div class="history__col history__control">
+                      <a href="#" class="history__edit">Edit</a>
+                    </div>
+                  </li>
+                  <li class="history__item ">
+                    <div class="history__icon">
+                      <svg class="icon icon-checked history__checked">
+                        <use xlink:href="img/sprite.svg#icon-checked"></use>
+                      </svg>
+                    </div>
+                    <div class="history__col history__date">05/21/2018</div>
+                    <div class="history__col history__number">06 lbs</div>
+                    <div class="history__col history__status">SUCCESS</div>
+                    <div class="history__col history__control">
+                      <a href="#" class="history__edit">Edit</a>
+                    </div>
+                  </li>
+                  <li class="history__item ">
+                    <div class="history__icon">
+                      <svg class="icon icon-checked history__checked">
+                        <use xlink:href="img/sprite.svg#icon-checked"></use>
+                      </svg>
+                    </div>
+                    <div class="history__col history__date">05/21/2018</div>
+                    <div class="history__col history__number">06 lbs</div>
+                    <div class="history__col history__status">SUCCESS</div>
+                    <div class="history__col history__control">
+                      <a href="#" class="history__edit">Edit</a>
+                    </div>
+                  </li>
+                  <li class="history__item ">
+                    <div class="history__icon">
+                      <svg class="icon icon-checked history__checked">
+                        <use xlink:href="img/sprite.svg#icon-checked"></use>
+                      </svg>
+                    </div>
+                    <div class="history__col history__date">05/21/2018</div>
+                    <div class="history__col history__number">06 lbs</div>
+                    <div class="history__col history__status">SUCCESS</div>
+                    <div class="history__col history__control">
+                      <a href="#" class="history__edit">Edit</a>
+                    </div>
+                  </li>
+                </ul>
               </div>
               <!-- end history -->
             </div>

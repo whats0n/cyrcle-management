@@ -1,26 +1,60 @@
 .menu
+	position: relative
 	padding: 45px 30px 65px
 	box-shadow: 0 2px 9px 0 rgba($black, 0.06)
 	background: $twilight
 	background-image: linear-gradient(249deg, $twilight, $dark-grey-blue)
+	+lg
+		padding: 15px 20px
+		overflow: visible
 	&__profile
 		margin-bottom: 48px
+		+lg
+			margin-bottom: 0
+			display: inline-block
+			vertical-align: top
 	&__meta
+		+lg
+			display: inline-block
+			vertical-align: top
+			margin: 8px 0 0 30px
+		+xs
+			display: block
+			margin: 15px 0 0
 		&-title
 			text-transform: uppercase
 			color: $white
-			+f(12px, 600, 1.42)
-			letter-spacing: .1px
 			margin-bottom: 19px
+			letter-spacing: .1px
+			+f(12px, 600, 1.42)
+			+lg
+				display: inline-block
+				vertical-align: top
+				margin-bottom: 0
+				+f(13px, null, 1.7)
 		&-label
 			display: inline-block
 			color: rgba($white, .9)
 			text-decoration: none
-			+f(13px, 400, 1.7)
+			+f(13px, null, 1.7)
+			+lg
+				display: inline-block
+				vertical-align: top
+				margin-left: 10px
 	&__logout
 		position: absolute
 		left: 30px
 		bottom: 35px
+		font-size: 0
+		+lg
+			left: auto
+			bottom: auto
+			top: 50%
+			right: 20px
+			transform: translateY(-50%)
+		+xs
+			top: 15px
+			transform: translateY(0)
 		&-label
 			display: inline-block
 			vertical-align: middle

@@ -12,5 +12,21 @@
 			</li>
 		{% endfor %}
 	</ul>
+	<div class="form history__form">
+		<div class="form__col form__col_date">
+			<input type="text" class="input">
+		</div>
+		<div class="form__col form__col_number">
+			<input type="text" class="input">
+		</div>
+		<div class="form__col form__col_select">
+			{{mixins.select({
+				options: [ 'Success', 'Missed' ]
+			})}}
+		</div>
+		<div class="form__control">
+			
+		</div>
+	</div>
 </div>
 <!-- end history -->

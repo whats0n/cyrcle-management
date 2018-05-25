@@ -1,0 +1,26 @@
+.details-list
+	&__item
+		position: relative
+		padding-right: 44px
+		+clr
+	&__label
+		float: left
+		color: #97a3b4
+		+f(13px, null, 1.7)
+	&__value
+		position: relative
+		float: right
+		padding-right: 18px
+		color: #97a3b4
+		+f(13px, 600, 1.7)
+		&:before
+			content: "-"
+			position: absolute
+			right: 0
+			top: 0
+	&__edit
+		position: absolute
+		top: 0
+		right: 0
+		color: $iris
+		+f(13px, 600, 1.7)

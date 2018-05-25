@@ -1,0 +1,24 @@
+<!-- begin details -->
+<div class="details">
+	<div class="details-address">
+		<div class="details-address__container">
+			<div class="details-address__content">
+				<div class="details-address__title">934 St Charles Ave NE</div>
+				<div class="details-address__meta">Atlanta, Ga, 30306</div>
+			</div>
+			<div class="details-address__map js-map"></div>
+		</div>
+	</div>
+	<ul class="details-list">
+		{% for item in [
+			{label: 'Frequency', value: 'Weekly'}
+		] %}
+			<li class="details-list__item">
+				<div class="details-list__label">{{item.label}}:</div>
+				<div class="details-list__value">{{item.value}}</div>
+				<button class="details-list__edit">edit</button>
+			</li>
+		{% endfor %}
+	</ul>
+</div>
+<!-- end details -->

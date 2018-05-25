@@ -11,6 +11,9 @@ $tableWidth: 7.54
 
 .table
 	font-size: 0
+	&__thead
+		+sm
+			display: none
 	&__th
 		display: inline-block
 		vertical-align: top
@@ -26,6 +29,8 @@ $tableWidth: 7.54
 		+col($colName)
 			padding-left: 18px
 			width: (210/$tableWidth) + %
+			+sm 
+				padding-bottom: 20px
 		+col($colFruquency)
 			width: (114/$tableWidth) + %
 		+col($colAddress)
@@ -33,10 +38,20 @@ $tableWidth: 7.54
 		+col($colStatus)
 			padding-right: 60px
 			width: (115/$tableWidth) + %
+			+sm 
+				padding-right: 15px
 	&__td
 		display: inline-block
 		vertical-align: middle
 		+f(15px, 400, 22px)
+		+r(900)
+			+f(13px, null, 1.46)
+		+sm
+			display: block
+			padding-top: 3px
+			padding-bottom: 3px
+			width: 100% !important
+			+f(15px)
 	&__item
 		position: relative
 		display: block
@@ -48,6 +63,10 @@ $tableWidth: 7.54
 		background: $white
 		text-decoration: none
 		transition: border-color .2s, background .2s
+		+r(900)
+			padding-top: 17px
+		+sm 
+			padding-right: 30px
 		&:not(:last-child)
 			margin-bottom: 8px
 		+hover
@@ -60,14 +79,30 @@ $tableWidth: 7.54
 		width: 38px
 		height: 38px
 		+cover
+		+r(900)
+			margin-top: 0
 	&__content
 		overflow: hidden
 		padding-left: 18px
+		+r(900)
+			padding-top: 2px
+			padding-bottom: 2px
+		+sm 
+			padding-top: 0
+			padding-bottom: 0
 	&__title
 		+f(15px, 600, 22px)
+		+r(900)
+			+f(13px, null, 1.46)
+		+sm
+			+f(15px)
 	&__meta
 		color: #97A3B4
 		+f(13px, 400, 18px)
+		+r(900)
+			+f(12px, null, 1.385)
+		+sm
+			+f(13px)
 	&__arrow
 		position: absolute
 		top: 50%
@@ -75,6 +110,8 @@ $tableWidth: 7.54
 		margin-top: -0.5em
 		fill: #B1BAC7
 		font-size: 17px
+		+xs
+			right: 15px
 	&__status
 		display: block
 		margin: 0 auto
@@ -84,8 +121,21 @@ $tableWidth: 7.54
 		height: 12px
 		background: #59C78A
 		box-shadow: 0 0 0 1px #59C78A
+		+sm 
+			display: inline-block
+			vertical-align: top
+			margin-top: 5px
 		&.is-error
 			background: #F05692
 			box-shadow: 0 0 0 1px #F05692
 	&__label
 		display: none
+		padding-right: 5px
+		color: #AAB2C0
+		font-weight: 600
+		text-transform: uppercase
+		+sm 
+			display: inline
+	&__value
+		+sm 
+			display: inline

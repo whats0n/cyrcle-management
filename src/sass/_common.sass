@@ -7,14 +7,32 @@ body
 
 .out
 	display: flex
+	+lg 
+		flex-wrap: wrap
+	+md 
+		display: block
+
 .menu,
 .aside,
 .main
 	overflow: auto
 	height: 100vh
 
+.aside,
+.main
+	+lg 
+		height: calc(100vh - 70px)
+	+md 
+		height: auto
+
 .menu
 	width: 244px
+	+lg 
+		padding: 0
+		width: 100%
+		height: 70px
+	+md 
+		height: auto
 
 .aside
 	width: 400px

@@ -17,6 +17,7 @@ $tableWidth: 7.54
 		padding-bottom: 8px
 		color: #AAB2C0
 		+f(11px, 600, 15px)
+		text-transform: uppercase
 	&__th,
 	&__td
 		padding-left: 15px
@@ -24,25 +25,34 @@ $tableWidth: 7.54
 		+clr
 		+col($colName)
 			padding-left: 18px
-			width: (210/7.54) + %
+			width: (210/$tableWidth) + %
 		+col($colFruquency)
-			width: (114/7.54) + %
+			width: (114/$tableWidth) + %
 		+col($colAddress)
-			width: (315/7.54) + %
+			width: (315/$tableWidth) + %
 		+col($colStatus)
 			padding-right: 60px
-			width: (115/7.54) + %
+			width: (115/$tableWidth) + %
 	&__td
 		display: inline-block
 		vertical-align: middle
 		+f(15px, 400, 22px)
 	&__item
 		position: relative
+		display: block
 		padding-top: 13px
 		padding-bottom: 17px
 		border: 1px solid #E6EAEE
 		border-radius: 4px
+		color: inherit
 		background: $white
+		text-decoration: none
+		transition: border-color .2s, background .2s
+		&:not(:last-child)
+			margin-bottom: 8px
+		+hover
+			border-color: rgba(84,90,191,0.58)
+			background: #F6FBFD
 	&__img
 		float: left
 		margin-top: 3px
@@ -74,3 +84,8 @@ $tableWidth: 7.54
 		height: 12px
 		background: #59C78A
 		box-shadow: 0 0 0 1px #59C78A
+		&.is-error
+			background: #F05692
+			box-shadow: 0 0 0 1px #F05692
+	&__label
+		display: none

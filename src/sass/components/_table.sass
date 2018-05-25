@@ -1,0 +1,76 @@
+=col($name)
+	&[data-column="#{$name}"]
+		@content
+
+$colName: 'name'
+$colFruquency: 'frequency'
+$colAddress: 'address'
+$colStatus: 'status'
+
+$tableWidth: 7.54
+
+.table
+	font-size: 0
+	&__th
+		display: inline-block
+		vertical-align: top
+		padding-bottom: 8px
+		color: #AAB2C0
+		+f(11px, 600, 15px)
+	&__th,
+	&__td
+		padding-left: 15px
+		padding-right: 15px
+		+clr
+		+col($colName)
+			padding-left: 18px
+			width: (210/7.54) + %
+		+col($colFruquency)
+			width: (114/7.54) + %
+		+col($colAddress)
+			width: (315/7.54) + %
+		+col($colStatus)
+			padding-right: 60px
+			width: (115/7.54) + %
+	&__td
+		display: inline-block
+		vertical-align: middle
+		+f(15px, 400, 22px)
+	&__item
+		position: relative
+		padding-top: 13px
+		padding-bottom: 17px
+		border: 1px solid #E6EAEE
+		border-radius: 4px
+		background: $white
+	&__img
+		float: left
+		margin-top: 3px
+		border-radius: 50%
+		width: 38px
+		height: 38px
+		+cover
+	&__content
+		overflow: hidden
+		padding-left: 18px
+	&__title
+		+f(15px, 600, 22px)
+	&__meta
+		color: #97A3B4
+		+f(13px, 400, 18px)
+	&__arrow
+		position: absolute
+		top: 50%
+		right: 29px
+		margin-top: -0.5em
+		fill: #B1BAC7
+		font-size: 17px
+	&__status
+		display: block
+		margin: 0 auto
+		border: 2px solid #FFFFFF
+		border-radius: 50%
+		width: 12px
+		height: 12px
+		background: #59C78A
+		box-shadow: 0 0 0 1px #59C78A

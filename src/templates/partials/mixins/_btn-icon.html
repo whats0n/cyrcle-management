@@ -1,3 +1,5 @@
+{% import "partials/mixins/_mixins.html" as mixins %}
+
 {% macro call(props) %}
-	<button class="btn-icon {{props.classList}}"></button>
+	<button class="btn-icon {{props.classList}}">{{mixins.icon('check', 'btn-icon__check')}}</button>
 {% endmacro %}

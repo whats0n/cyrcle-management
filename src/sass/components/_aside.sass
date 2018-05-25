@@ -1,0 +1,36 @@
+.aside
+	padding: 20px 30px
+	&__simple-profile
+		margin-bottom: 24px
+	&__controls
+		margin-bottom: 17px
+		border-radius: 5px
+		box-shadow: -6px 7px 15px 0 rgba(58,70,93,0.07)
+		font-size: 0
+	&__control 
+		display: inline-block
+		vertical-align: top
+		padding: 9px 10px
+		width: 50%
+		color: $dusk
+		background: $white
+		+f(13px, 600, 22px)
+		text-transform: uppercase
+		letter-spacing: 1.06px
+		transition: color .3s, background .3s
+		&:first-child
+			border-radius: 5px 0 0 5px
+		&:last-child
+			border-radius: 0 5px 5px 0
+		&.is-active
+			color: $white
+			background: $dusk
+	&__headline
+		margin-bottom: 24px
+	&__footer
+		padding-top: 25px
+		text-align: right
+	&__container
+		display: none
+		&.is-active
+			display: block

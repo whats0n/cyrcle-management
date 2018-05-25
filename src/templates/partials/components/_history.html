@@ -1,0 +1,16 @@
+<!-- begin history -->
+<div class="history">
+	<ul class="sm-info history__sm-info">
+		{% for item in [
+			{ number: '5', label: 'Pickups' },
+			{ number: '28', label: 'Days' },
+			{ number: '515', label: 'Scrap Points' }
+		] %}
+			<li class="sm-info__item">
+				<div class="sm-info__number">{{item.number}}</div>
+				<div class="sm-info__label">{{item.label}}</div>
+			</li>
+		{% endfor %}
+	</ul>
+</div>
+<!-- end history -->

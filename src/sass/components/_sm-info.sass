@@ -1,0 +1,35 @@
+.sm-info
+	margin: 0 -14px
+	font-size: 0
+	&__item
+		position: relative
+		display: inline-block
+		vertical-align: top
+		padding: 8px 14px
+		width: 33.33%
+		color: $white
+		text-align: center
+		+xs 
+			padding: 14px 0
+		&:not(:last-child)
+			&:before
+				content: ''
+				position: absolute
+				top: 28px
+				right: 0
+				bottom: 28px
+				border-left: 1px solid $iris
+				opacity: 0.15
+	&__number
+		margin-bottom: 16px
+		color: $iris
+		+f(26px, 600, 40px)
+		letter-spacing: -0.54px
+		+xs
+			+f(24px, null, 1.4)
+	&__label
+		color: $dusk
+		+f(13px, 400, 24px)
+		text-transform: uppercase
+		+xs 
+			+f(11px, null, 1.4)

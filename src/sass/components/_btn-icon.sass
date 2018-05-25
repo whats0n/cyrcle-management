@@ -3,8 +3,17 @@
 	height: 40px
 	border-radius: 5px
 	background: $dusk
+	color: $white
+	box-shadow: 0 4px 8px 0 rgba($black,.06)
+	transition: background .24s, color .24s
 	+vertical
+	+hover
+		background: $white
+		color: $dusk
+	&:disabled
+		opacity: 0.5
 	&__check
 		display: inline-block
 		vertical-align: middle
 		font-size: 15px
+		fill: currentColor

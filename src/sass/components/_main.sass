@@ -1,6 +1,8 @@
 .main
 	padding: 40px 32px 18px
 	background: #f8f9fb
+	+md 
+		padding: 40px 20px
 	&__inner
 		margin: 0 auto
 		max-width: 754px
@@ -11,12 +13,19 @@
 	&__title
 		float: left
 		padding: 2px 32px 5px 0
+		+sm
+			float: none
+			padding: 0 0 20px
 	&__search
 		position: relative
 		float: left
 		padding-left: 33px
 		width: 100%
 		max-width: 408px
+		+sm 
+			float: none
+			padding: 22px 0 0 0
+			max-width: none
 		&:before
 			content: ''
 			position: absolute
@@ -24,3 +33,10 @@
 			left: 0
 			bottom: 4px
 			border-left: 1px solid rgba(#535285, 0.06)
+			+sm 
+				top: 0
+				left: 0
+				bottom: auto
+				border-top: 1px solid rgba(#535285, 0.1)
+				border-left: none
+				width: 60px

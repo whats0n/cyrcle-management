@@ -8,10 +8,15 @@
 		width: 64px
 		height: 64px
 		+vertical
+		+lg
+			width: 40px
+			height: 40px
 	&__logo
 		font-size: 64px
 		display: inline-block
 		vertical-align: middle
+		+lg
+			font-size: 40px
 	&__img
 		border-radius: 50%
 		background-position: center center
@@ -19,6 +24,9 @@
 	&__content
 		margin-left: 64px
 		padding: 10px 0 15px 25px
+		+lg
+			padding: 0 0 0 20px
+			margin-left: 40px
 	&__title
 		position: relative
 		display: inline-block
@@ -35,6 +43,8 @@
 			height: 6px
 			border-radius: 6px
 			background: #f05692
+		+lg
+			margin-bottom: 3px
 		&.is-active
 			&:before
 				background: $cool-green

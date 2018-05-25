@@ -1,27 +1,50 @@
-$itemWidth: (90+65+85+50)/100
+$itemWidth: 2.92
 
 .history
+	padding-bottom: 20px
 	margin: 0 -7px
-	+sm
+	+lg
 		margin: 0
 	&__sm-info
 		padding: 0 4px 0 1px
 		margin-bottom: 24px
 	&__form
-		padding-bottom: 40px
+		padding-bottom: 36px
+		+xs
+			margin: 0 auto
+			max-width: 362px
 	&__list
-		margin: -8px 0
-	&__item
 		position: relative
-		padding: 8px 0 8px 40px
-		color: #97A3B4
-		+f(13px, 600, 22px)
-		text-transform: uppercase
-		+clr 
+		margin: -8px 0
+		+md
+			margin: 0 auto
+			text-align: center
+		+xs
+			max-width: 354px
+			text-align: left
+		&:before
+			content: ''
+			position: absolute
+			top: 22px
+			left: 14px
+			bottom: 22px
+			border-left: 1px solid rgba(#C2CAD4, 0.1)
+	&__item
 		&.is-error
 			.history
 				&__icon
 					border-color: #F05692
+		&-in 
+			position: relative
+			padding: 8px 0 8px 40px
+			color: #97A3B4
+			+f(13px, 400, 22px)
+			+clr 
+			+xs
+				padding: 5px 0 5px 30px
+				font-size: 11px
+		&-form
+			display: none
 	&__icon
 		position: absolute
 		top: 8px
@@ -30,7 +53,13 @@ $itemWidth: (90+65+85+50)/100
 		border-radius: 50%
 		width: 28px
 		height: 28px
+		background: $white
+		line-height: 1
 		+vertical
+		+xs
+			border-width: 1px
+			width: 20px
+			height: 20px
 	&__checked,
 	&__close
 		display: inline-block
@@ -39,22 +68,37 @@ $itemWidth: (90+65+85+50)/100
 		fill: $cool-green
 		font-size: 10px
 		transform: translateY(1px)
+		+xs
+			font-size: 7px
+			transform: translateY(0)
 	&__close
 		fill: #F05692
 		font-size: 12px
+		+xs
+			font-size: 8px
 	&__col 
+		position: relative
 		float: left
-		padding: 3px 0
+		padding: 3px 20px 3px 0
+		&:before
+			content: '-'
+			position: absolute
+			top: 3px
+			right: 12px
 	&__date
 		width: (90/$itemWidth) + %
 	&__number
 		width: (65/$itemWidth) + %
 	&__status
 		width: (85/$itemWidth) + %
+		text-transform: uppercase
 	&__control
 		width: (50/$itemWidth) + %
+		&:before
+			display: none
 	&__edit
 		color: $iris
+		text-transform: uppercase
 		text-decoration: none
 		+hover 
 			text-decoration: underline

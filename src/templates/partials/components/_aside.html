@@ -19,6 +19,10 @@
 					<div class="headline__meta">This is all the info about this customer</div>
 				</div>
 				{% include 'partials/components/_details.html' %}
+				<div class="aside__footer">
+					<button class="btn aside__disable">Disable</button>
+					<button class="btn btn_green aside__enable is-hidden">Enable</button>
+				</div>
 			</div>
 			<div class="aside__container" data-tabs-content="pickups">
 				<div class="headline aside__headline">
@@ -27,10 +31,6 @@
 				</div>
 				{% include 'partials/components/_history.html' %}
 			</div>
-		</div>
-		<div class="aside__footer">
-			<button class="btn aside__disable">Disable</button>
-			<button class="btn btn_green aside__enable is-hidden">Enable</button>
 		</div>
 	</div>
 </div>

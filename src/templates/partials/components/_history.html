@@ -31,18 +31,20 @@
 	<ul class="history__list">
 		{% for item in range(0,5) %}
 			<li class="history__item {% if loop.index == 1 %}is-error{% endif %}">
-				<div class="history__icon">
-					{% if loop.index == 1 %}
-						{{mixins.icon('close', 'history__close')}}
-					{% else %}
-						{{mixins.icon('checked', 'history__checked')}}
-					{% endif %}
-				</div>
-				<div class="history__col history__date">05/21/2018</div>
-				<div class="history__col history__number">06 lbs</div>
-				<div class="history__col history__status">{% if loop.index == 1 %}MISSED{% else %}SUCCESS{% endif %}</div>
-				<div class="history__col history__control">
-					<a href="#" class="history__edit">Edit</a>
+				<div class="history__item-in">
+					<div class="history__icon">
+						{% if loop.index == 1 %}
+							{{mixins.icon('close', 'history__close')}}
+						{% else %}
+							{{mixins.icon('checked', 'history__checked')}}
+						{% endif %}
+					</div>
+					<div class="history__col history__date">05/21/2018</div>
+					<div class="history__col history__number">06 lbs</div>
+					<div class="history__col history__status">{% if loop.index == 1 %}MISSED{% else %}SUCCESS{% endif %}</div>
+					<div class="history__col history__control">
+						<a href="#" class="history__edit">Edit</a>
+					</div>
 				</div>
 			</li>
 		{% endfor %}

@@ -1,15 +1,36 @@
 $formWidth: 3.14
 
 .form
+	position: relative
 	padding-right: 52px
 	margin: -4px
 	+clr
+	&.is-disabled
+		cursor: not-allowed
+		.form 
+			&__col 
+				opacity: 0.5
+				pointer-events: none
+			&__control
+				opacity: 0.27
+				pointer-events: none
 	&__col
 		float: left
 		padding: 4px
 		&_date
 			width: (125/$formWidth) + %
+			+xs
+				width: 50%
 		&_number
 			width: (77/$formWidth) + %
+			+xs
+				width: 50%
 		&_select
 			width: (112/$formWidth) + %
+			+xs
+				width: 100%	
+	&__control
+		position: absolute
+		top: 0
+		right: 0
+		padding: 4px

@@ -1,3 +1,5 @@
+$itemWidth: (90+65+85+50)/100
+
 .history
 	margin: 0 -7px
 	+sm
@@ -5,3 +7,54 @@
 	&__sm-info
 		padding: 0 4px 0 1px
 		margin-bottom: 24px
+	&__form
+		padding-bottom: 40px
+	&__list
+		margin: -8px 0
+	&__item
+		position: relative
+		padding: 8px 0 8px 40px
+		color: #97A3B4
+		+f(13px, 600, 22px)
+		text-transform: uppercase
+		+clr 
+		&.is-error
+			.history
+				&__icon
+					border-color: #F05692
+	&__icon
+		position: absolute
+		top: 8px
+		left: 0
+		border: 2px solid $cool-green
+		border-radius: 50%
+		width: 28px
+		height: 28px
+		+vertical
+	&__checked,
+	&__close
+		display: inline-block
+		vertical-align: middle
+	&__checked
+		fill: $cool-green
+		font-size: 10px
+		transform: translateY(1px)
+	&__close
+		fill: #F05692
+		font-size: 12px
+	&__col 
+		float: left
+		padding: 3px 0
+	&__date
+		width: (90/$itemWidth) + %
+	&__number
+		width: (65/$itemWidth) + %
+	&__status
+		width: (85/$itemWidth) + %
+	&__control
+		width: (50/$itemWidth) + %
+	&__edit
+		color: $iris
+		text-decoration: none
+		+hover 
+			text-decoration: underline

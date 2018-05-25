@@ -14,10 +14,10 @@
 	</ul>
 	<div class="form history__form">
 		<div class="form__col form__col_date">
-			<input type="text" class="input">
+			<input type="text" class="input" placeholder="Date">
 		</div>
 		<div class="form__col form__col_number">
-			<input type="text" class="input">
+			<input type="text" class="input" placeholder="lbs">
 		</div>
 		<div class="form__col form__col_select">
 			{{mixins.select({
@@ -25,8 +25,27 @@
 			})}}
 		</div>
 		<div class="form__control">
-			
+			{{btnIcon.call()}}
 		</div>
 	</div>
+	<ul class="history__list">
+		{% for item in range(0,5) %}
+			<li class="history__item {% if loop.index == 1 %}is-error{% endif %}">
+				<div class="history__icon">
+					{% if loop.index == 1 %}
+						{{mixins.icon('close', 'history__close')}}
+					{% else %}
+						{{mixins.icon('checked', 'history__checked')}}
+					{% endif %}
+				</div>
+				<div class="history__col history__date">05/21/2018</div>
+				<div class="history__col history__number">06 lbs</div>
+				<div class="history__col history__status">{% if loop.index == 1 %}MISSED{% else %}SUCCESS{% endif %}</div>
+				<div class="history__col history__control">
+					<a href="#" class="history__edit">Edit</a>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
 </div>
 <!-- end history -->

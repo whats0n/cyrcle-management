@@ -1,8 +1,17 @@
 .details-list
+	padding: 0 3px
 	&__item
 		position: relative
 		padding-right: 44px
 		+clr
+		&.is-editing
+			.details-list
+				&__value,
+				&__edit
+					display: none
+				&__btn-icon,
+				&__select
+					display: block
 	&__label
 		float: left
 		color: #97a3b4
@@ -23,11 +32,11 @@
 		top: 0
 		right: 0
 		padding-left: 11px
+		height: 40px
 		color: $iris
 		background: none
 		text-transform: uppercase
-		+f(13px, 600, 1.7)
-	&__edit,
+		+f(13px, 600, normal)
 	&__label,
 	&__value,
 	&__value:before
@@ -37,7 +46,11 @@
 		position: absolute
 		right: 0
 		top: 0
-		// display: none
+		display: none
 	&__select
 		margin-right: 8px
+		float: right
+		max-width: 140px
 		display: none
+		.select__field
+			padding-right: 35px

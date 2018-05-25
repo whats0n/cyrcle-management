@@ -15,18 +15,58 @@
 				label: 'Frequency',
 				value: 'Weekly',
 				edit: true,
+				btnIconOptions: {classList: 'details-list__btn-icon'},
+				selectOptions: {
+					options: ['Bi-weekly', 'Bi-weekly']
+				}
+			},
+			{
+				label: 'Bin Option',
+				value: 'Bin Only',
+				edit: true,
+				btnIconOptions: {classList: 'details-list__btn-icon'},
+				selectOptions: {
+					options: ['Bi-weekly', 'Bi-weekl1']
+				}
+			},
+			{
+				label: 'MRR',
+				value: '$19',
+				edit: true,
+				btnIconOptions: {classList: 'details-list__btn-icon'},
+				selectOptions: {
+					options: ['Bi-weekly', 'Bi-weekly']
+				}
+			},
+			{
+				label: 'First Pickup',
+				value: '05/07/2018',
+				btnIconOptions: {classList: 'details-list__btn-icon'}
+			},
+			{
+				label: 'Assigned Day',
+				value: 'WED',
+				edit: true,
+				btnIconOptions: {classList: 'details-list__btn-icon'},
+				selectOptions: {
+					options: ['Mon', 'Mon12']
+				}
+			},
+			{
+				label: 'Next Pickup',
+				value: '5/23/2018',
 				btnIconOptions: {classList: 'details-list__btn-icon'}
 			}
 		] %}
-			<li class="details-list__item">
+			<li class="details-list__item js-edit">
 				<div class="details-list__label">{{item.label}}:</div>
 				<div class="details-list__value">{{item.value}}</div>
 				{{btnIcon.call(item.btnIconOptions)}}
 				{% if item.edit %}
-					<button class="details-list__edit">edit</button>
+					<button class="details-list__edit js-edit-control">edit</button>
 				{% endif %}
 				<div class="details-list__select">
-
+					{{mixins.select(item.selectOptions)}}
 				</div>
 			</li>
 		{% endfor %}

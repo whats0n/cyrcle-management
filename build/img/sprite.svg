@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-angle-right" viewBox="0 0 10 17">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-angle-down" viewBox="0 0 8.9 4.9">
+    <title>
+        Stroke 186
+    </title>
+    <path d="M4.5 4.9c-.2 0-.5-.1-.6-.2l-3.5-3C0 1.4-.1.7.3.3c.3-.4 1-.5 1.4-.1l2.9 2.5L7.5.2c.4-.3 1-.3 1.4.1.3.4.3 1-.1 1.4l-3.5 3c-.4.2-.6.2-.8.2z"/>
+</symbol><symbol id="icon-angle-right" viewBox="0 0 10 17">
     <title>
         Shape
     </title>
     <path d="M0 15l6.2-6.5L0 2l1.9-2L10 8.5 1.9 17z"/>
 </symbol><symbol id="icon-check" viewBox="0 0 45.701 45.7">
     <path d="M20.687 38.332a5.308 5.308 0 0 1-7.505 0L1.554 26.704A5.306 5.306 0 1 1 9.059 19.2l6.928 6.927a1.344 1.344 0 0 0 1.896 0L36.642 7.368a5.308 5.308 0 0 1 7.505 7.504l-23.46 23.46z"/>
+</symbol><symbol id="icon-checked" viewBox="0 0 426.7 307">
+    <path d="M153.5 307c-8.7 0-17.3-3.3-23.9-9.9L9.9 177.4c-13.2-13.2-13.2-34.6 0-47.9 13.2-13.2 34.6-13.2 47.9 0l95.7 95.7L368.9 9.9c13.2-13.2 34.6-13.2 47.9 0 13.2 13.2 13.2 34.7 0 47.9L177.4 297.1c-6.6 6.6-15.2 9.9-23.9 9.9z"/>
+</symbol><symbol id="icon-close" viewBox="0 0 48 48">
+    <path d="M28.2 24L47.1 5.1c1.2-1.2 1.2-3.1 0-4.2C45.9-.3 44-.3 42.9.9L24 19.7 5.1.9C3.9-.3 2-.3.9.9-.3 2.1-.3 4 .9 5.1L19.7 24 .9 42.8C-.3 44-.3 45.9.9 47c.6.7 1.3 1 2.1 1s1.5-.3 2.1-.9L24 28.2l18.9 18.9c.6.6 1.4.9 2.1.9s1.5-.3 2.1-.9c1.2-1.2 1.2-3.1 0-4.2L28.2 24z"/>
 </symbol><symbol id="icon-logo" viewBox="0 0 135.6 138.1">
     <title>
         logo

@@ -4,7 +4,8 @@
 
 {% macro select(props) %}
 <div class="select">
-	<select>
+	{{icon('angle-down', 'select__arrow')}}
+	<select class="select__field">
 		{% for item in props.options %}
 			<option value="{{item}}">{{item}}</option>
 		{% endfor %}

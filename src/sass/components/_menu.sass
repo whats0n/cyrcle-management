@@ -1,5 +1,33 @@
 .menu
-	padding: 45px 30px
+	padding: 45px 30px 65px
 	box-shadow: 0 2px 9px 0 rgba($black, 0.06)
 	background: $twilight
 	background-image: linear-gradient(249deg, $twilight, $dark-grey-blue)
+	&__profile
+		margin-bottom: 48px
+	&__meta
+		&-title
+			text-transform: uppercase
+			color: $white
+			+f(12px, 600, 1.42)
+			letter-spacing: .1px
+			margin-bottom: 19px
+		&-label
+			display: inline-block
+			color: rgba($white, .9)
+			text-decoration: none
+			+f(13px, 400, 1.7)
+	&__logout
+		position: absolute
+		left: 30px
+		bottom: 35px
+		&-label
+			display: inline-block
+			vertical-align: middle
+			color: $white
+			+f(13px, null, 1.7)
+		&-icon
+			display: inline-block
+			vertical-align: middle
+			margin-left: 7px
+			font-size: 15px

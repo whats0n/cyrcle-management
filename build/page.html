@@ -13,7 +13,7 @@
     <div class="out">
       <!-- begin menu -->
       <div class="menu">
-        <div class="profile">
+        <div class="profile menu__profile">
           <a href="#" class="profile__container">
             <div class="profile__figure">
               <svg class="icon icon-logo profile__logo">
@@ -21,14 +21,23 @@
               </svg>
               <!-- <div class="profile__img" style="background-image: url(img/logo.png);"></div> --></div>
             <div class="profile__content">
-              <div class="profile__title">Andrew</div>
+              <div class="profile__title is-active">Andrew</div>
               <div class="profile__meta">
                 <span>Cyrcle</span>
               </div>
-              <div class="profile__status"></div>
             </div>
           </a>
         </div>
+        <div class="menu__meta">
+          <div class="menu__meta-title">general</div>
+          <a href="#" class="menu__meta-label">Customers</a>
+        </div>
+        <a href="#" class="menu__logout">
+          <span class="menu__logout-label">Logout</span>
+          <svg class="icon icon-logout menu__logout-icon">
+            <use xlink:href="img/sprite.svg#icon-logout"></use>
+          </svg>
+        </a>
       </div>
       <!-- end menu -->
       <!-- begin main -->

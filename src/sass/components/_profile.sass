@@ -17,9 +17,27 @@
 		background-position: center center
 		background-size: cover
 	&__content
-		overflow: hidden
+		margin-left: 64px
 		padding: 10px 0 15px 25px
 	&__title
+		position: relative
+		display: inline-block
 		color: $white
+		margin-bottom: 5px
+		padding-right: 14px
+		+f(15px, 600, 1.34)
+		&:before
+			content: ''
+			position: absolute
+			top: 8px
+			right: 0
+			width: 6px
+			height: 6px
+			border-radius: 6px
+			background: #f05692
+		&.is-active
+			&:before
+				background: $cool-green
 	&__meta
-		color: $white
+		color: #c0c9d7
+		+f(12px, null, 1.42)
